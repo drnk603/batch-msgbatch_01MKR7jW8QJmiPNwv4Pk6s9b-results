@@ -20,10 +20,7 @@ $pageImage = SITE_URL . '/assets/images/privacy-hero.jpg';
 $lastUpdated = date('d. F Y', time());
 
 include 'includes/header.php';
-?-->
-<!-- Breadcrumbs -->
-<html>
- <head>
+?--><!-- Breadcrumbs --><html><head>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -31,9 +28,9 @@ include 'includes/header.php';
  <body>
   <header class="navbar navbar-expand-md sticky-top bg-white border-bottom" role="banner">
    <div class="container-fluid">
-    <a class="navbar-brand fw-bold" href="/" aria-label="&lt;?php echo BRAND_NAME; ?&gt; Homepage"> 
+    <a class="navbar-brand fw-bold" href="/" aria-label="<?php echo BRAND_NAME; ?> Homepage"> 
      <svg class="ratio" width="32" height="32" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-      <path d="M14 6l-3.75 5 2.85 3.8-1.6 1.2C9.81 13.75 7 10 7 10l-6 8h22l-9-12z" fill="currentColor" />
+      <path d="M14 6l-3.75 5 2.85 3.8-1.6 1.2C9.81 13.75 7 10 7 10l-6 8h22l-9-12z" fill="currentColor"></path>
      </svg> 
      <!--?php echo BRAND_NAME; ?--> 
     </a>
@@ -59,13 +56,13 @@ include 'includes/header.php';
    <div class="row justify-content-center">
     <div class="col-lg-10 col-xl-8">
      <!-- Header -->
-     <header class="text-center mb-5" data-animate>
+     <header class="text-center mb-5" data-animate="">
       <h1 class="display-4 mb-3">Datenschutzerklärung</h1>
       <p class="lead text-muted">Ihre Privatsphäre ist uns wichtig. Erfahren Sie, wie wir Ihre Daten schützen.</p>
       <p class="text-muted"><small>Zuletzt aktualisiert: <!--?php echo $lastUpdated; ?--></small></p>
      </header>
      <!-- Introduction -->
-     <section class="mb-5" data-animate>
+     <section class="mb-5" data-animate="">
       <div class="card bg-light border-0 p-4">
        <h2 class="h4 mb-3">Einleitung</h2>
        <p class="mb-3">Willkommen bei <!--?php echo BRAND_NAME; ?-->. Der Schutz Ihrer persönlichen Daten ist für uns von höchster Bedeutung. Diese Datenschutzerklärung informiert Sie über die Art, den Umfang und den Zweck der Verarbeitung personenbezogener Daten durch uns als Verantwortliche.</p>
@@ -73,17 +70,17 @@ include 'includes/header.php';
       </div>
      </section>
      <!-- Responsible Entity -->
-     <section class="mb-5" data-animate>
+     <section class="mb-5" data-animate="">
       <h2 class="h3 mb-4">Verantwortliche Stelle</h2>
       <div class="card border-start border-primary border-4 ps-4 py-3">
        <p class="mb-2"><strong><!--?php echo BRAND_NAME; ?--></strong></p>
        <p class="mb-2"><!--?php echo COMPANY_ADDRESS; ?--></p>
        <p class="mb-2">Telefon: <!--?php echo COMPANY_PHONE; ?--></p>
-       <p class="mb-0">E-Mail: <a href="mailto:&lt;?php echo SUPPORT_EMAIL; ?&gt;"><!--?php echo SUPPORT_EMAIL; ?--></a></p>
+       <p class="mb-0">E-Mail: <a href="mailto:<?php echo SUPPORT_EMAIL; ?>"><!--?php echo SUPPORT_EMAIL; ?--></a></p>
       </div>
      </section>
      <!-- Data Collection -->
-     <section class="mb-5" data-animate>
+     <section class="mb-5" data-animate="">
       <h2 class="h3 mb-4">Welche Daten sammeln wir?</h2>
       <div class="row g-4">
        <div class="col-md-6">
@@ -115,7 +112,7 @@ include 'includes/header.php';
       </div>
      </section>
      <!-- Data Usage -->
-     <section class="mb-5" data-animate>
+     <section class="mb-5" data-animate="">
       <h2 class="h3 mb-4">Wie verwenden wir Ihre Daten?</h2>
       <div class="accordion" id="dataUsageAccordion">
        <div class="accordion-item">
@@ -145,7 +142,7 @@ include 'includes/header.php';
       </div>
      </section>
      <!-- Cookies -->
-     <section class="mb-5" data-animate>
+     <section class="mb-5" data-animate="">
       <h2 class="h3 mb-4">Cookies und ähnliche Technologien</h2>
       <div class="alert alert-info" role="alert">
        <h3 class="h5 alert-heading"><i class="fas fa-cookie-bite me-2"></i> Was sind Cookies?</h3>
@@ -185,7 +182,7 @@ include 'includes/header.php';
       </div>
      </section>
      <!-- Third Party Disclosures -->
-     <section class="mb-5" data-animate>
+     <section class="mb-5" data-animate="">
       <h2 class="h3 mb-4">Weitergabe an Dritte</h2>
       <div class="card bg-light border-0">
        <div class="card-body">
@@ -226,7 +223,7 @@ include 'includes/header.php';
       </div>
      </section>
      <!-- User Rights -->
-     <section class="mb-5" data-animate>
+     <section class="mb-5" data-animate="">
       <h2 class="h3 mb-4">Ihre Rechte</h2>
       <div class="row g-4">
        <div class="col-lg-6">
@@ -273,13 +270,13 @@ include 'includes/header.php';
       <div class="mt-4 p-3 bg-light rounded">
        <p class="mb-0"><strong>Kontakt für Datenschutzanfragen:</strong>
         <br>
-        E-Mail: <a href="mailto:&lt;?php echo SUPPORT_EMAIL; ?&gt;"><!--?php echo SUPPORT_EMAIL; ?--></a>
+        E-Mail: <a href="mailto:<?php echo SUPPORT_EMAIL; ?>"><!--?php echo SUPPORT_EMAIL; ?--></a>
         <br>
         Betreff: "Datenschutzanfrage"</p>
       </div>
      </section>
      <!-- Data Security -->
-     <section class="mb-5" data-animate>
+     <section class="mb-5" data-animate="">
       <h2 class="h3 mb-4">Datensicherheit</h2>
       <div class="card border-success">
        <div class="card-body">
@@ -301,7 +298,7 @@ include 'includes/header.php';
       </div>
      </section>
      <!-- Data Retention -->
-     <section class="mb-5" data-animate>
+     <section class="mb-5" data-animate="">
       <h2 class="h3 mb-4">Speicherdauer</h2>
       <div class="table-responsive">
        <table class="table table-striped table-hover">
@@ -333,7 +330,7 @@ include 'includes/header.php';
       </div>
      </section>
      <!-- Contact for Privacy -->
-     <section class="mb-5" data-animate>
+     <section class="mb-5" data-animate="">
       <h2 class="h3 mb-4">Kontakt zum Datenschutz</h2>
       <div class="card bg-primary text-white">
        <div class="card-body">
@@ -343,14 +340,14 @@ include 'includes/header.php';
           <p class="card-text mb-0">Zögern Sie nicht, uns bei Fragen oder Anliegen zum Datenschutz zu kontaktieren. Wir helfen Ihnen gerne weiter.</p>
          </div>
          <div class="col-md-4 text-md-end mt-3 mt-md-0">
-          <a href="contact.php" class="btn btn-light btn-lg"> <i class="fas fa-envelope me-2"></i> Kontakt aufnehmen </a>
+          
          </div>
         </div>
        </div>
       </div>
      </section>
      <!-- Changes to Privacy Policy -->
-     <section class="mb-5" data-animate>
+     <section class="mb-5" data-animate="">
       <h2 class="h3 mb-4">Änderungen dieser Datenschutzerklärung</h2>
       <div class="alert alert-warning" role="alert">
        <h3 class="h5 alert-heading"><i class="fas fa-exclamation-triangle me-2"></i> Aktualität der Datenschutzerklärung</h3>
@@ -358,7 +355,7 @@ include 'includes/header.php';
       </div>
      </section>
      <!-- Footer CTA -->
-     <div class="text-center" data-animate>
+     <div class="text-center" data-animate="">
       <div class="border-top pt-4">
        <p class="text-muted mb-3">Weitere Informationen zu unseren rechtlichen Bestimmungen:</p>
        <a href="terms.php" class="btn btn-outline-primary me-2">Allgemeine Geschäftsbedingungen</a> <a href="about.php" class="btn btn-outline-secondary">Über uns</a>
@@ -377,15 +374,15 @@ include 'includes/header.php';
       <div class="d-flex gap-2">
        <a href="#" class="btn btn-outline-light btn-sm" aria-label="Facebook" title="Facebook"> 
         <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
-         <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+         <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path>
         </svg> 
        </a> <a href="#" class="btn btn-outline-light btn-sm" aria-label="Instagram" title="Instagram"> 
         <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
-         <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+         <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path>
         </svg> 
        </a> <a href="#" class="btn btn-outline-light btn-sm" aria-label="YouTube" title="YouTube"> 
         <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
-         <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+         <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path>
         </svg> 
        </a>
       </div>
@@ -414,10 +411,10 @@ include 'includes/header.php';
         <!--?php echo htmlspecialchars(BUSINESS_ADDRESS); ?-->
        </div>
        <div class="mb-2">
-        Tel: <a href="tel:&lt;?php echo str_replace(' ', '', BUSINESS_PHONE); ?&gt;" class="text-white-50 text-decoration-none"><!--?php echo htmlspecialchars(BUSINESS_PHONE); ?--></a>
+        Tel: <a href="tel:<?php echo str_replace(' ', '', BUSINESS_PHONE); ?>" class="text-white-50 text-decoration-none"><!--?php echo htmlspecialchars(BUSINESS_PHONE); ?--></a>
        </div>
        <div>
-        E-Mail: <a href="mailto:&lt;?php echo SUPPORT_EMAIL; ?&gt;" class="text-white-50 text-decoration-none"><!--?php echo htmlspecialchars(SUPPORT_EMAIL); ?--></a>
+        E-Mail: <a href="mailto:<?php echo SUPPORT_EMAIL; ?>" class="text-white-50 text-decoration-none"><!--?php echo htmlspecialchars(SUPPORT_EMAIL); ?--></a>
        </div>
       </address>
      </div>
@@ -433,6 +430,6 @@ include 'includes/header.php';
     </div>
    </div>
   </footer>
-  <script src="script.js" defer></script>
- </body>
-</html>
+  <script src="script.js" defer=""></script>
+ 
+</body></html>

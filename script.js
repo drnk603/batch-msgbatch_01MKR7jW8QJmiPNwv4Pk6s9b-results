@@ -410,15 +410,15 @@
 
         var validators = {
             name: {
-                pattern: /^[a-zA-ZÀ-ÿs-']{2,50}$/,
+                pattern: /^[a-zA-ZÀ-ÿ\s-']{2,50}$/,
                 message: 'Bitte geben Sie einen gültigen Namen ein (2-50 Zeichen, nur Buchstaben).'
             },
             email: {
-                pattern: /^[^s@]+@[^s@]+.[^s@]+$/,
+                pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
                 message: 'Bitte geben Sie eine gültige E-Mail-Adresse ein.'
             },
             phone: {
-                pattern: /^[ds+-()]{10,20}$/,
+                pattern: /^[\d\s+\-()]{10,20}$/,
                 message: 'Bitte geben Sie eine gültige Telefonnummer ein.'
             },
             message: {
